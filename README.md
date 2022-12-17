@@ -8,48 +8,20 @@ The AddWorkerForm form allows you to enter the details of a new worker and save 
 The code uses the MySqlConnection class to establish a connection to the MySQL database and the MySqlCommand class to execute SQL statements. It uses the MySqlDataReader class to retrieve data from the database and the DialogResult class to handle the result of the ShowDialog() method when the AddWorkerForm form is closed.
 
 # Workers table Structure
-+-------------+--------------+------+-----+---------+----------------+
-| Field       | Type         | Null | Key | Default | Extra          |
-+-------------+--------------+------+-----+---------+----------------+
-| id          | int(11)      | NO   | PRI | NULL    | auto_increment |
-| firstName   | varchar(255) | NO   |     | NULL    |                |
-| lastName    | varchar(255) | NO   |     | NULL    |                |
-| street      | varchar(255) | NO   |     | NULL    |                |
-| houseNumber | int(11)      | NO   |     | NULL    |                |
-| zipCode     | int(11)      | NO   |     | NULL    |                |
-| positionId  | int(11)      | NO   | MUL | NULL    |                |
-+-------------+--------------+------+-----+---------+----------------+
+![image](https://user-images.githubusercontent.com/82764111/208215317-9755f2c6-db3d-411c-bbb6-f07e8bb9e961.png)
 
 ________________________________________________________________________________________________________________________________
 
 # Workers Table Sample
-+----+-----------+----------+------------------------+-------------+---------+------------+
-| id | firstName | lastName | street                 | houseNumber | zipCode | positionId |
-+----+-----------+----------+------------------------+-------------+---------+------------+
-|  1 | Hans      | Bauer    | Konrad-Adenauer-Straße |          32 |    6712 |          1 |
-|  2 | Wolfgang  | Haas     | Lauterstraße           |           8 |    1159 |          1 |
-|  3 | Greta     | Heinz    | Schlossweg             |          43 |   24103 |          2 |
-|  4 | Klaus     | Lange    | Stadtplatz             |          17 |   39104 |          3 |
-|  5 | Rolf      | Müller   | Kirchstraße            |          92 |   19053 |          2 |
-+----+-----------+----------+------------------------+-------------+---------+------------+
+![image](https://user-images.githubusercontent.com/82764111/208215379-c3427d02-3649-46e9-9c67-c0fae3a95ef9.png)
+
+________________________________________________________________________________________________________________________________
+
+# Positions Table Structure
+![image](https://user-images.githubusercontent.com/82764111/208215402-a4067dc3-f980-4478-aa2b-83e93860458d.png)
 
 ________________________________________________________________________________________________________________________________
 
 # Positions Table Sample
-+--------------+--------------+------+-----+---------+-------+
-| Field        | Type         | Null | Key | Default | Extra |
-+--------------+--------------+------+-----+---------+-------+
-| positionId   | int(11)      | NO   | PRI | NULL    |       |
-| positionName | varchar(255) | NO   |     | NULL    |       |
-+--------------+--------------+------+-----+---------+-------+
+![image](https://user-images.githubusercontent.com/82764111/208215419-b7cda1cf-398f-4148-b931-c5389e03f0b2.png)
 
-________________________________________________________________________________________________________________________________
-
-# Positions Table Sample
-+------------+-----------------------+
-| positionId | positionName          |
-+------------+-----------------------+
-|          1 | Software Developer    |
-|          2 | Network Administrator |
-|          3 | Systems Analyst       |
-+------------+-----------------------+
